@@ -1,0 +1,46 @@
+﻿<Window x:Class="Default_Behavior_ButtonAdv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Default_Behavior_ButtonAdv"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" syncfusion:SkinStorage.VisualStyle="Metro"
+        Title="Default_Behavior_ButtonAdv" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="350"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock FontSize="18" Text="ButttonAdv with IsDefault and Cancel behavior of MS Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock FontSize="15" Grid.Row="1" Text="Press Enter to activate default button and Esc to activate cancel button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <syncfusion:ButtonAdv
+                x:Name="DefaultButton"
+                Grid.Column="1"
+                Width="100"
+                Height="30"
+                Margin="10"
+                Label="Yes"
+                SizeMode="Normal"
+                SmallIcon="Resources/Submit-01.png"
+               />
+            <syncfusion:ButtonAdv
+                x:Name="CancelButton"
+                Grid.Column="2"
+                Width="100"
+                Height="30"
+                Margin="10"
+                Label="Cancel"
+                SizeMode="Normal"
+                SmallIcon="Resources/Close.png"
+             />
+       </StackPanel>
+    </Grid>
+</Window>
