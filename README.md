@@ -71,7 +71,11 @@ The IsDefault property indicates whether the ButtonAdv is a Default button and i
 ```
 <syncfusion:ButtonAdv x:Name="defaultButton" 
                       Label="Default" 
-                      Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ButtonAdv_Click" IsDefault="True" />
+                      Grid.Column="1" Grid.Row="1"
+                      VerticalAlignment="Top"
+                      HorizontalAlignment="Center"
+                      Click="ButtonAdv_Click"
+                      IsDefault="True" />
 ```
 
 ## How to run this application?
